@@ -17,5 +17,6 @@
 @property (nonatomic) NSString *reviewURL;
 @property (nonatomic) NSString *review;
 @property (nonatomic) UIImage *posterImage;
+@property (nonatomic) NSString *webURL;
 
 @end

@@ -118,6 +118,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-B6-lqm">
+                                <rect key="frame" x="129" y="231" width="62" height="30"/>
+                                <state key="normal" title="Webview"/>
+                                <connections>
+                                    <segue destination="XPW-Q1-RWk" kind="show" id="aIq-FY-SO5"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQH-NY-fIs">
                                 <rect key="frame" x="143" y="114" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -128,6 +135,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AQH-NY-fIs" firstAttribute="top" secondItem="oNB-xS-sVB" secondAttribute="bottom" constant="50" id="9cv-oX-8oV"/>
+                            <constraint firstItem="KCT-B6-lqm" firstAttribute="top" secondItem="UKC-Kd-8tV" secondAttribute="bottom" constant="25" id="EMI-cA-9sZ"/>
+                            <constraint firstItem="KCT-B6-lqm" firstAttribute="centerX" secondItem="5td-Sl-1bW" secondAttribute="centerX" id="XZr-IS-vTe"/>
                             <constraint firstItem="UKC-Kd-8tV" firstAttribute="top" secondItem="AQH-NY-fIs" secondAttribute="bottom" constant="50" id="gKj-ji-cO9"/>
                             <constraint firstItem="AQH-NY-fIs" firstAttribute="centerX" secondItem="5td-Sl-1bW" secondAttribute="centerX" id="hVT-Kp-pj0"/>
                             <constraint firstItem="UKC-Kd-8tV" firstAttribute="centerX" secondItem="5td-Sl-1bW" secondAttribute="centerX" id="mMk-HF-Zc7"/>
@@ -142,6 +151,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7js-Mf-Xcm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1584" y="277"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="hyz-6m-usv">
+            <objects>
+                <viewController id="XPW-Q1-RWk" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CYs-tH-Nrq"/>
+                        <viewControllerLayoutGuide type="bottom" id="RFH-ks-PpE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MUw-cU-1d3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AY6-ie-Hbn">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RFH-ks-PpE" firstAttribute="top" secondItem="AY6-ie-Hbn" secondAttribute="bottom" id="GMe-HN-XXd"/>
+                            <constraint firstAttribute="trailing" secondItem="AY6-ie-Hbn" secondAttribute="trailing" id="cnM-vp-Rs1"/>
+                            <constraint firstItem="AY6-ie-Hbn" firstAttribute="leading" secondItem="MUw-cU-1d3" secondAttribute="leading" id="ema-99-SvA"/>
+                            <constraint firstItem="AY6-ie-Hbn" firstAttribute="top" secondItem="MUw-cU-1d3" secondAttribute="top" constant="64" id="t7h-gq-dRR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="webView" destination="AY6-ie-Hbn" id="XnU-vZ-2dX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mph-5A-7gG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="277"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mB5-xL-lJB">

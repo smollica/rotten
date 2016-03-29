@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "WebViewController.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -50,6 +51,13 @@
     }];
     
     [reviewTask resume];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    WebViewController *wvc = (WebViewController *)[segue destinationViewController];
+    wvc.movie = self.movie;
+    
 }
 
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Movie.h"
 
 @interface MovieCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ratingLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;
+
 
 @end

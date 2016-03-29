@@ -16,6 +16,7 @@
 		E53CD10A1CA9C13800D7EAC1 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = E53CD1091CA9C13800D7EAC1 /* Movie.m */; };
 		E53CD10D1CA9C4C700D7EAC1 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E53CD10C1CA9C4C700D7EAC1 /* MovieCell.m */; };
 		E53CD1101CA9DD3900D7EAC1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53CD10F1CA9DD3900D7EAC1 /* DetailViewController.m */; };
+		E53CD1131CA9F12300D7EAC1 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E53CD1121CA9F12300D7EAC1 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E53CD10C1CA9C4C700D7EAC1 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
 		E53CD10E1CA9DD3900D7EAC1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		E53CD10F1CA9DD3900D7EAC1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E53CD1111CA9F12300D7EAC1 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		E53CD1121CA9F12300D7EAC1 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				E53CD0F81CA9BC4D00D7EAC1 /* ViewController.m */,
 				E53CD10E1CA9DD3900D7EAC1 /* DetailViewController.h */,
 				E53CD10F1CA9DD3900D7EAC1 /* DetailViewController.m */,
+				E53CD1111CA9F12300D7EAC1 /* WebViewController.h */,
+				E53CD1121CA9F12300D7EAC1 /* WebViewController.m */,
 				E53CD1081CA9C13800D7EAC1 /* Movie.h */,
 				E53CD1091CA9C13800D7EAC1 /* Movie.m */,
 				E53CD10B1CA9C4C700D7EAC1 /* MovieCell.h */,
@@ -166,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E53CD0F91CA9BC4D00D7EAC1 /* ViewController.m in Sources */,
+				E53CD1131CA9F12300D7EAC1 /* WebViewController.m in Sources */,
 				E53CD10D1CA9C4C700D7EAC1 /* MovieCell.m in Sources */,
 				E53CD0F61CA9BC4D00D7EAC1 /* AppDelegate.m in Sources */,
 				E53CD10A1CA9C13800D7EAC1 /* Movie.m in Sources */,
